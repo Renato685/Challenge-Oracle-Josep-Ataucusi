@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img class="header__logo" src="img/logo.svg" alt="Logo"/>
+            <h1 class="header__title">Cifrado de Texto</h1>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="main-container__input">
+            <textarea id="inputText" class="input-area" rows="40" cols="60" placeholder="Escribe aquí el texto"></textarea>
+            <p id="errorText" class="input-error"></p>
+            <div class="input-buttons">
+                <button id="btnEncrypt" class="button-encrypt">Cifrar</button>
+                <button id="btnDecrypt" class="button-decrypt">Descifrar</button>
+            </div>
+        </section>
+
+        <section class="main-container__output">
+            <div class="output-content">
+                <img id="statusImage" src="img/Alien.webp" alt="Character"/>
+                <textarea id="outputText" class="output-area" readonly placeholder="Aquí aparecerá el resultado"></textarea>
+                <p id="statusText">Introduce el texto para cifrar o descifrar</p>
+                <p id="copyNotification"></p>
+                <button id="btnCopy" class="button-copy">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p> Diseñado por Josep Ataucusi </p>
+        <a href="https://github.com/Renato685"><img src="img/github.svg" alt=""></a>
+        <a href="https://www.facebook.com/renato.ataucusi/"><img src="img/icons8-facebook.svg" alt=""></a>
+        <a href="www.linkedin.com/in/josep-ataucusi"><img src="img/linkedin.svg" alt=""></a>
+
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
